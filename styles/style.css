@@ -138,14 +138,31 @@ body {
     background-color: rgb(228, 228, 228);
 }
 
-.containerContact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: auto;
-    height: 500px;
+.hero {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    text-align: center;
-    background: black
+    height: 500px;
+}
+
+/* FUENTE PARA EL HERO */
+@font-face {
+    font-family: "Anton";
+    src: url(../assets/fonts/Anton/Anton-Regular.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+.hero__text {
+    font-family: Anton;
+    font-size: 300px;
+    /* EDIT HERO IMG */
+    background-image: url("../assets/imagenes/contactoDos.jpg");
+    background-size: cover;
+    background-position-y: 70%;
+    /* AGREGAMOS LA IMG AL TEXTO Y TRANSP AL TITULO */
+    background-clip: text;
+    color: transparent;
 }
 
 .containerContact__img {
