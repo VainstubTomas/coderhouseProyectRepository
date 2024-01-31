@@ -1,0 +1,541 @@
+/* BODY */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+/* INDEX */
+/* HEADER */
+
+/* NavBar con bootstrap */
+
+.navBar__img {
+    width: auto;
+    height: 100px;
+}
+
+/* MAIN */
+
+.title {
+    background: rgb(175, 31, 31);
+    background: linear-gradient(90deg, rgba(175, 31, 31, 1) 0%, rgba(2, 0, 36, 1) 4%, rgba(2, 0, 36, 1) 96%, rgba(175, 31, 31, 1) 100%);
+}
+
+.containerIndex {
+    width: 100%;
+    height: 600px;
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 74%, rgba(175, 31, 31, 1) 100%);
+}
+
+.containerIndex__img {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.title {
+    width: auto;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerIndex__title {
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    font-size: 35px;
+}
+
+.containerIndex__title__h1 {
+    font-weight: bold;
+}
+
+.containerIndex__title__h2 {
+    font-weight: lighter;
+}
+
+/* SECCION CARROUSEL BOOTSTRAP */
+
+#carouselExample {
+    height: 900px;
+}
+
+.carousel-item {
+    height: 900px;
+    object-fit: cover;
+}
+
+.imgLinkUno,
+.imgLinkDos,
+.imgLinkTres {
+    width: auto;
+    height: 700px;
+}
+
+.box {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1;
+    height: 450px;
+}
+
+.box__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IFRAME MAPA ESTADIO */
+
+.container {
+    background: rgb(175, 31, 31);
+    background: linear-gradient(90deg, rgba(175, 31, 31, 1) 0%, rgba(2, 0, 36, 1) 4%, rgba(2, 0, 36, 1) 96%, rgba(175, 31, 31, 1) 100%);
+    max-width: 100%;
+    height: 700px;
+}
+
+.container__titles {
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 50px 0px 50px 0px;
+}
+
+.container__titles__A {
+    font-weight: lighter;
+}
+
+.container__titles__B {
+    font-weight: Bold;
+}
+
+.container__mapa {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    gap: 30px;
+}
+
+.container__mapa__imgLateral img {
+    object-fit: contain;
+    height: 315px;
+    border-radius: 2px;
+}
+
+.container__mapa__iframe {
+    border: 0;
+    height: 400px;
+    width: 600px;
+}
+
+/* CONTACTO */
+
+#sectionContact {
+    background-color: rgb(228, 228, 228);
+}
+
+.containerContact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
+    height: 500px;
+    align-items: center;
+    text-align: center;
+    background: black
+}
+
+.containerContact__img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    /* BUSCAR FORMA DE METERLE EFECTO */
+}
+
+.containerContact__title {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(223, 223, 223);
+    /* text-shadow: 2px 2px 6px rgba(128, 128, 128, 0.753); */
+}
+
+/* TITULOS GRALES !!!!! */
+
+.contact {
+    padding: 50px 25px;
+}
+
+.contact__title {
+    text-align: center;
+    font-size: 38px;
+    color: black;
+}
+
+.logosContact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    color: black;
+}
+
+.logosContact__logo {
+    height: 80px;
+    width: auto;
+}
+
+.ubication {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.ubication__iframe {
+    border: 0;
+    height: 500px;
+    width: 800px;
+}
+
+/* HISTORIA */
+
+.history {
+    padding: 50px 25px;
+}
+
+.history__title {
+    color: white;
+    text-align: center;
+    font-size: 38px;
+}
+
+/* MULTIMEDIA */
+
+.multimedia {
+    padding: 50px 25px;
+}
+
+.multimedia__title {
+    color: white;
+    text-align: center;
+    font-size: 38px;
+}
+
+.video__principal {
+    text-align: center;
+}
+
+.video__complementos {
+    text-align: center;
+}
+
+.buttom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+/* BOTON */
+
+.buttom__data {
+    font-weight: bolder;
+    display: block;
+    width: auto;
+    background-color: rgb(49, 49, 49);
+    color: rgb(175, 45, 45);
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width:320px) {
+
+    /* INDEX INDEX INDEX */
+
+    .containerIndex {
+        width: 100%;
+        height: 300px;
+    }
+
+    .containerIndex__img {
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+    }
+
+    .containerIndex__title {
+        width: 80%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .containerIndex__title__h1,
+    .container__titles__B {
+        font-size: 22px;
+    }
+
+    .containerIndex__title__h2,
+    .container__titles__A {
+        font-size: 18px;
+    }
+
+    .title {
+        width: auto;
+        height: 200px;
+        background: rgb(175, 31, 31);
+        background: linear-gradient(90deg, rgba(175, 31, 31, 1) 0%, rgba(2, 0, 36, 1) 4%, rgba(2, 0, 36, 1) 96%, rgba(175, 31, 31, 1) 100%);
+    }
+
+    #carouselExample {
+        height: 280px;
+        width: auto;
+    }
+
+    .carousel-item {
+        height: 280px;
+    }
+
+    .container {
+        background: rgb(175, 31, 31);
+        background: linear-gradient(90deg, rgba(175, 31, 31, 1) 0%, rgba(2, 0, 36, 1) 4%, rgba(2, 0, 36, 1) 96%, rgba(175, 31, 31, 1) 100%);
+        height: 800px;
+    }
+
+    .container__titles {
+        color: white;
+    }
+
+    .container__mapa {
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 180px 200px 180px;
+        text-align: center;
+    }
+
+    .imgLateral {
+        width: 260px;
+    }
+
+    .container__mapa__iframe {
+        width: 280px;
+        height: 200px;
+        border-radius: 5px;
+    }
+
+}
+
+@media (min-width:321px) and (max-width:600px) {
+
+    /* INDEX INDEX INDEX */
+    .containerIndex {
+        height: auto;
+    }
+
+    .containerIndex__img {
+        object-fit: cover;
+        height: 400px;
+    }
+
+    .containerIndex__title {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #carouselExample {
+        height: 400px;
+    }
+
+    .carousel-item {
+        height: 400px;
+    }
+
+    .container__titles__B {
+        font-size: 25px;
+    }
+
+
+    .container__titles__A {
+        font-size: 18px;
+    }
+
+    .container {
+        background: rgb(175, 31, 31);
+        background: linear-gradient(90deg, rgba(175, 31, 31, 1) 0%, rgba(2, 0, 36, 1) 4%, rgba(2, 0, 36, 1) 96%, rgba(175, 31, 31, 1) 100%);
+        height: 1150px;
+        max-width: 1200px;
+    }
+
+    .container__titles {
+        color: white;
+    }
+
+    .container__mapa {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3, auto);
+        text-align: center;
+    }
+
+    .container__mapa__iframe {
+        width: 480px;
+        height: 280px;
+        border-radius: 5px;
+    }
+
+    .imgLateral {
+        object-fit: cover;
+        width: 450px;
+    }
+}
+
+@media (min-width:601px) and (max-width:768px) {
+
+    /* INDEX INDEX INDEX */
+    .containerIndex {
+        height: auto;
+    }
+
+    .containerIndex__img {
+        object-fit: cover;
+        height: 500px;
+    }
+
+    .containerIndex__title {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #carouselExample {
+        height: 500px;
+    }
+
+    .carousel-item {
+        height: 500px;
+    }
+
+    .container__titles__B {
+        font-size: 28px;
+    }
+
+
+    .container__titles__A {
+        font-size: 20px;
+    }
+
+    .container {
+        background: rgb(175, 31, 31);
+        background: linear-gradient(90deg, rgba(175, 31, 31, 1) 0%, rgba(2, 0, 36, 1) 4%, rgba(2, 0, 36, 1) 96%, rgba(175, 31, 31, 1) 100%);
+        height: 1200px;
+        max-width: 1200px;
+    }
+
+    .container__titles {
+        color: white;
+    }
+
+    .container__mapa {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3, auto);
+        text-align: center;
+    }
+
+    .container__mapa__iframe {
+        width: 500px;
+        height: 320px;
+        border-radius: 5px;
+    }
+
+    .imgLateral {
+        object-fit: cover;
+        width: 500px;
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+
+    /* INDEX INDEX INDEX */
+    .containerIndex {
+        height: auto;
+    }
+
+    .containerIndex__img {
+        object-fit: cover;
+        height: 500px;
+    }
+
+    .containerIndex__title {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #carouselExample {
+        height: auto;
+    }
+
+    .carousel-item {
+        height: 100%;
+        width: 100%;
+    }
+
+    .container__titles__B {
+        font-size: 33px;
+    }
+
+
+    .container__titles__A {
+        font-size: 25px;
+    }
+
+    .container {
+        background: rgb(175, 31, 31);
+        background: linear-gradient(90deg, rgba(175, 31, 31, 1) 0%, rgba(2, 0, 36, 1) 4%, rgba(2, 0, 36, 1) 96%, rgba(175, 31, 31, 1) 100%);
+        height: 1300px;
+        max-width: 1200px;
+    }
+
+    .container__titles {
+        color: white;
+    }
+
+    .container__mapa {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3, auto);
+        text-align: center;
+    }
+
+    .container__mapa__iframe {
+        width: 720px;
+        height: 400px;
+        border-radius: 5px;
+    }
+
+    /* MODIFICAR TAMAÑO IMGS LATERALES */
+
+    .imgLateral {
+        object-fit: cover;
+        width: 500px;
+    }
+}
