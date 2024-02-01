@@ -50,6 +50,7 @@ body {
 }
 
 .containerIndex__title__h1 {
+    font-family: Anton;
     font-weight: bold;
 }
 
@@ -99,6 +100,12 @@ body {
 
 .imgLateral {
     width: 400px;
+    transition: 2s;
+}
+
+.imgLateral:hover {
+    transform: scale(1.1);
+    transition: 2s;
 }
 
 .container__mapa {
@@ -129,6 +136,7 @@ body {
 }
 
 .container__titles__B {
+    font-family: Anton;
     font-weight: Bold;
 }
 
@@ -309,9 +317,17 @@ body {
     background-color: rgb(49, 49, 49);
     color: rgb(175, 45, 45);
     border-radius: 10px;
+    border: 1px solid white;
     padding: 15px 30px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
+.buttom__data:hover {
+    background-color: aliceblue;
+    color: black;
+    border: 1px solid red;
+}
 
 /* RESPONSIVE */
 
