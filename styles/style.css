@@ -501,6 +501,51 @@ body {
     .catedral__info {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* MULTIMEDIA MULTIMEDIA */
+
+    .video__principal__iframe {
+        width: 321px;
+        height: 250px;
+    }
+
+    .videos__complementos {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .videos__complementos__video {
+        width: 310px;
+        height: 220px;
+    }
+}
+
+@media (min-width:321px) and (max-width:430px) {
+    /* MULTIMEDIA MULTIMEDIA */
+
+    .video__principal__iframe {
+        width: 320px;
+        height: 250px;
+    }
+
+    .videos__complementos {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .videos__complementos__video {
+        width: 310px;
+        height: 220px;
+    }
+
 }
 
 @media (min-width:321px) and (max-width:600px) {
@@ -662,6 +707,27 @@ body {
     .catedral__info {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* MULTIMEDIA MULTIMEDIA */
+
+    .video__principal__iframe {
+        width: 450px;
+        height: 300px;
+    }
+
+    .videos__complementos {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .videos__complementos__video {
+        width: 430px;
+        height: 320px;
+    }
 }
 
 @media (min-width:601px) and (max-width:768px) {
@@ -758,6 +824,27 @@ body {
     .catedral__info {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* MULTIMEDIA MULTIMEDIA */
+
+    .video__principal__iframe {
+        width: 600px;
+        height: 400px;
+    }
+
+    .videos__complementos {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .videos__complementos__video {
+        width: 550px;
+        height: 300px;
+    }
 }
 
 @media (min-width:769px) and (max-width:1024px) {
@@ -839,6 +926,27 @@ body {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    /* MULTIMEDIA MULTIMEDIA */
+
+    .video__principal__iframe {
+        width: 760px;
+        height: 600px;
+    }
+
+    .videos__complementos {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .videos__complementos__video {
+        width: 700px;
+        height: 400px;
+    }
+
 }
 
 @media (min-width:1025px) and (max-width:1200px) {
@@ -898,6 +1006,26 @@ body {
     .capillita__info,
     .catedral__info {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* MULTIMEDIA MULTIMEDIA */
+
+    .video__principal__iframe {
+        width: 1025px;
+        height: 900px;
+    }
+
+    .videos__complementos {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .videos__complementos__video {
+        width: 510px;
     }
 
 }
