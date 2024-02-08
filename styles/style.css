@@ -191,8 +191,6 @@ body {
     color: black;
 }
 
-/* . */
-
 .logosContact {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -255,8 +253,20 @@ body {
 .imgCatedral,
 .imgCapillita {
     width: 600px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    transition: 5s;
 }
 
+.imgEstadio:hover,
+.imgCatedral:hover,
+.imgCapillita:hover {
+    transform: scale(1.1);
+    transition: 5s;
+}
+
+.iframe__capillita {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+}
 
 /* HISTORIA */
 
@@ -459,6 +469,38 @@ body {
         width: 310px;
         margin: 2px;
     }
+
+    /* INSTALACIONES INSTALACIONES */
+
+    .instalaciones__title {
+        font-size: 35px;
+    }
+
+    .titulosInst {
+        font-size: 25px;
+    }
+
+    .imgEstadio,
+    .imgCatedral,
+    .imgCapillita {
+        width: 318px;
+    }
+
+    .iframe__capillita {
+        width: 318px;
+        height: 300px;
+    }
+
+    .estadio__info__texto,
+    .catedral__info__texto {
+        font-size: 12px;
+    }
+
+    .estadio__info,
+    .capillita__info,
+    .catedral__info {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media (min-width:321px) and (max-width:600px) {
@@ -588,6 +630,38 @@ body {
         min-width: 320px;
         max-width: 550px;
     }
+
+    /* INSTALACIONES INSTALACIONES */
+
+    .instalaciones__title {
+        font-size: 35px;
+    }
+
+    .titulosInst {
+        font-size: 25px;
+    }
+
+    .imgEstadio,
+    .imgCatedral,
+    .imgCapillita {
+        width: 320px;
+    }
+
+    .iframe__capillita {
+        width: 320px;
+        height: 300px;
+    }
+
+    .estadio__info__texto,
+    .catedral__info__texto {
+        font-size: 12px;
+    }
+
+    .estadio__info,
+    .capillita__info,
+    .catedral__info {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media (min-width:601px) and (max-width:768px) {
@@ -676,6 +750,14 @@ body {
         height: 400px;
         width: 500px;
     }
+
+    /* INSTALACIONES INSTALACIONES */
+
+    .estadio__info,
+    .capillita__info,
+    .catedral__info {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media (min-width:769px) and (max-width:1024px) {
@@ -749,6 +831,14 @@ body {
         width: 700px;
     }
 
+    /* INSTALACIONES INSTALACIONES */
+
+    .estadio__info,
+    .capillita__info,
+    .catedral__info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
 }
 
 @media (min-width:1025px) and (max-width:1200px) {
@@ -800,6 +890,14 @@ body {
         grid-template-rows: repeat(3, 1fr);
         height: 600px;
         gap: 20px;
+    }
+
+    /* INSTALACIONES INSTALACIONES */
+
+    .estadio__info,
+    .capillita__info,
+    .catedral__info {
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
