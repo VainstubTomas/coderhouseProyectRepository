@@ -281,11 +281,14 @@ body {
 
 .cards-wrapper {
     display: flex;
+    justify-content: center;
 }
 
 .card {
     margin: 0 .5em;
     width: calc(100%/3);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 .image__wrapper {
@@ -307,8 +310,12 @@ body {
     text-align: center;
 }
 
-.video__complementos {
-    text-align: center;
+.videos__complementos {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .buttom {
@@ -522,30 +529,10 @@ body {
         width: 310px;
         height: 220px;
     }
-}
 
-@media (min-width:321px) and (max-width:430px) {
-    /* MULTIMEDIA MULTIMEDIA */
-
-    .video__principal__iframe {
-        width: 320px;
-        height: 250px;
+    .multimedia__title {
+        font-size: 35px;
     }
-
-    .videos__complementos {
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .videos__complementos__video {
-        width: 310px;
-        height: 220px;
-    }
-
 }
 
 @media (min-width:321px) and (max-width:600px) {
@@ -651,8 +638,6 @@ body {
         font-size: 18px;
     }
 
-    /* . */
-
     .logosContact {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -711,8 +696,8 @@ body {
     /* MULTIMEDIA MULTIMEDIA */
 
     .video__principal__iframe {
-        width: 450px;
-        height: 300px;
+        width: 340px;
+        height: 280px;
     }
 
     .videos__complementos {
@@ -725,8 +710,12 @@ body {
     }
 
     .videos__complementos__video {
-        width: 430px;
-        height: 320px;
+        width: 330px;
+        height: 270px;
+    }
+
+    .multimedia__title {
+        font-size: 35px;
     }
 }
 
@@ -801,8 +790,6 @@ body {
     .logosContact__mail__description {
         font-size: 17px;
     }
-
-    /* . */
 
     .logosContact {
         display: grid;
