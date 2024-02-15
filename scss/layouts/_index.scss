@@ -1,12 +1,12 @@
 .containerIndex {
     width: 100%;
     height: 600px;
-}
 
-.containerIndex__img {
-    object-fit: cover;
-    width: 100%;
-    height: 600px;
+    .containerIndex__img {
+        object-fit: cover;
+        width: 100%;
+        height: 600px;
+    }
 }
 
 .title {
@@ -15,72 +15,57 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
 
-.containerIndex__title {
-    color: black;
-    flex-direction: column;
-    text-align: center;
-    font-size: 35px;
-}
+    .containerIndex__title {
+        color: black;
+        flex-direction: column;
+        text-align: center;
+        font-size: 35px;
+    }
 
-.containerIndex__title__h1 {
-    font-family: Anton;
-    font-weight: bold;
-}
+    .containerIndex__title__h1 {
+        font-family: Anton;
+        font-weight: bold;
+    }
 
-.containerIndex__title__h2 {
-    font-weight: lighter;
+    .containerIndex__title__h2 {
+        font-weight: lighter;
+    }
 }
-
-/* SECCION CARROUSEL BOOTSTRAP */
 
 #carouselExample {
     height: 800px;
-}
 
-.imgAdapatadaCarousel img {
-    max-height: 800px;
-    height: 800px;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-}
-
-.imgLinkUno,
-.imgLinkDos,
-.imgLinkTres {
-    width: auto;
-    height: 700px;
-}
-
-.box {
-    border: 1px solid black;
-    display: grid;
-    grid-template-columns: 1;
-    height: 450px;
-}
-
-.box__container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    .imgAdapatadaCarousel img {
+        max-height: 800px;
+        height: 800px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
 }
 
 /* IFRAME MAPA ESTADIO */
 .container {
     height: 700px;
     max-width: 1200px;
-}
 
-.imgLateral {
-    width: 400px;
-    transition: 2s;
-}
+    .container__titles {
+        flex-direction: column;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+        padding: 50px 0px 50px 0px;
 
-.imgLateral:hover {
-    transform: scale(1.1);
-    transition: 2s;
+        .container__titles__A {
+            font-weight: lighter;
+        }
+
+        .container__titles__B {
+            font-family: Anton;
+            font-weight: Bold;
+        }
+    }
 }
 
 .container__mapa {
@@ -90,27 +75,20 @@
     text-align: center;
     align-items: center;
     gap: 25px;
-}
 
-.container__mapa__iframe {
-    width: 500px;
-    height: 400px;
-    border-radius: 5px;
-}
+    .imgLateral {
+        width: 400px;
+        transition: 2s;
+    }
 
-.container__titles {
-    flex-direction: column;
-    text-align: center;
-    font-size: 20px;
-    color: black;
-    padding: 50px 0px 50px 0px;
-}
+    .imgLateral:hover {
+        transform: scale(1.1);
+        transition: 2s;
+    }
 
-.container__titles__A {
-    font-weight: lighter;
-}
-
-.container__titles__B {
-    font-family: Anton;
-    font-weight: Bold;
+    .container__mapa__iframe {
+        width: 500px;
+        height: 400px;
+        border-radius: 5px;
+    }
 }

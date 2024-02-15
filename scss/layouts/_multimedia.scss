@@ -1,5 +1,3 @@
-/* MULTIMEDIA */
-
 .video__principal {
     text-align: center;
 }
@@ -17,25 +15,23 @@
     align-items: center;
     justify-content: center;
     height: 200px;
-}
 
-/* BOTON */
+    .buttom__data {
+        font-weight: bolder;
+        display: block;
+        width: auto;
+        background-color: rgb(49, 49, 49);
+        color: rgb(175, 45, 45);
+        border-radius: 10px;
+        border: 1px solid white;
+        padding: 15px 30px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
 
-.buttom__data {
-    font-weight: bolder;
-    display: block;
-    width: auto;
-    background-color: rgb(49, 49, 49);
-    color: rgb(175, 45, 45);
-    border-radius: 10px;
-    border: 1px solid white;
-    padding: 15px 30px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.buttom__data:hover {
-    background-color: aliceblue;
-    color: black;
-    border: 1px solid red;
+    .buttom__data:hover {
+        background-color: aliceblue;
+        color: black;
+        border: 1px solid red;
+    }
 }
