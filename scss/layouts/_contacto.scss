@@ -1,0 +1,73 @@
+/* CONTACTO */
+
+#sectionContact {
+    background-color: rgb(228, 228, 228);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+/* FUENTE PARA EL HERO */
+@font-face {
+    font-family: "Anton";
+    src: url(../assets/fonts/Anton/Anton-Regular.ttf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+.hero__text {
+    font-family: Anton;
+    font-size: 300px;
+    /* EDIT HERO IMG */
+    background-image: url("../assets/imagenes/contactoDos.jpg");
+    background-size: cover;
+    background-position-y: 70%;
+    /* AGREGAMOS LA IMG AL TEXTO Y TRANSP AL TITULO */
+    background-clip: text;
+    color: transparent;
+}
+
+
+
+.logosContact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    height: 300px;
+    color: black;
+}
+
+.logosContact__logo {
+    height: 80px;
+    width: auto;
+}
+
+.logosContact__direccion__title,
+.logosContact__telefono__title,
+.logosContact__mail__title {
+    font-size: 25px;
+}
+
+.logosContact__direccion__description,
+.logosContact__telefono__description,
+.logosContact__mail__description {
+    font-size: 17px;
+}
+
+.ubication {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.ubication__iframe {
+    border: 0;
+    height: 500px;
+    width: 800px;
+}

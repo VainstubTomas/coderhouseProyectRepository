@@ -1,0 +1,37 @@
+/* INSTALACIONES */
+
+.titulosInst {
+    text-align: center;
+    font-weight: lighter;
+}
+
+.estadio__info,
+.capillita__info,
+.catedral__info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    margin: 5px;
+    padding: 50px 5px;
+}
+
+.imgEstadio,
+.imgCatedral,
+.imgCapillita {
+    width: 600px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    transition: 5s;
+}
+
+.imgEstadio:hover,
+.imgCatedral:hover,
+.imgCapillita:hover {
+    transform: scale(1.1);
+    transition: 5s;
+}
+
+.iframe__capillita {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+}
