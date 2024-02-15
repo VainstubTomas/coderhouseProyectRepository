@@ -19,7 +19,7 @@
 .imgCatedral,
 .imgCapillita {
     width: 600px;
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: $boxShadow;
     transition: 5s;
 }
 
@@ -31,5 +31,5 @@
 }
 
 .iframe__capillita {
-    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: $boxShadow;
 }
