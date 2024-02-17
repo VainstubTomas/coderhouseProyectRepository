@@ -3,19 +3,15 @@
 }
 
 .hero {
+    @include flex(center, center);
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 500px;
 
     .hero__text {
         font-family: Anton;
         font-size: 300px;
         background-image: url("../assets/imagenes/contactoDos.jpg");
-        background-size: cover;
-        background-position-y: 70%;
-        background-clip: text;
-        color: transparent;
+        @include imageHero(cover, 70%, text, transparent);
     }
 }
 
@@ -36,8 +32,7 @@
     color: black;
 
     .logosContact__logo {
-        height: 80px;
-        width: auto;
+        @include image(auto, 80px);
     }
 
     .logosContact__direccion__title,
@@ -54,9 +49,8 @@
 }
 
 .ubication {
+    @include flex(center, center);
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 600px;
 
     .ubication__iframe {

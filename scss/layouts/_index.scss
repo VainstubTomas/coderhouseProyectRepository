@@ -13,8 +13,7 @@
     width: auto;
     height: 300px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex(center, center);
 
     .containerIndex__title {
         color: black;
@@ -38,8 +37,7 @@
 
     .imgAdapatadaCarousel img {
         max-height: 800px;
-        height: 800px;
-        width: 100%;
+        @include image(100%, 800px);
         object-fit: cover;
         object-position: top;
     }
