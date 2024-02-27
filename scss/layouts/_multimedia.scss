@@ -1,0 +1,36 @@
+.video__principal {
+    text-align: center;
+}
+
+.videos__complementos {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.buttom {
+    display: flex;
+    @include flex(center, center);
+    height: 200px;
+
+    .buttom__data {
+        font-weight: bolder;
+        display: block;
+        width: auto;
+        background-color: rgb(49, 49, 49);
+        color: rgb(175, 45, 45);
+        border-radius: 10px;
+        border: 1px solid white;
+        padding: 15px 30px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .buttom__data:hover {
+        background-color: aliceblue;
+        color: black;
+        border: 1px solid red;
+    }
+}

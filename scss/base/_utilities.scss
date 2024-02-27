@@ -1,0 +1,25 @@
+@mixin flex ($justify, $align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+// medidas grales de imagenes
+@mixin image ($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+// hero de contacto
+@mixin imageHero ($bgSize, $bgPosition-y, $bgClip, $color) {
+    background-size: $bgSize;
+    background-position-y: $bgPosition-y;
+    background-clip: $bgClip;
+    color: $color;
+}
+
+// tamaños containers
+@mixin containerMeasure($width, $height) {
+    width: $width;
+    height: $height;
+}
