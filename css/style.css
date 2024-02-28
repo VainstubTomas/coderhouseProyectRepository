@@ -121,8 +121,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.image__wrapper img {
+.image__wrapper .image__wrapper img {
   max-width: 100%;
   height: 500px;
   text-align: center;
@@ -144,6 +143,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .title .containerIndex__title {
   color: black;
@@ -159,10 +161,18 @@ body {
   font-weight: lighter;
 }
 
-.carousel {
+.carousel .containerIndex__title__h1 {
+  font-family: Anton;
+  font-weight: bold;
+}
+.carousel .containerIndex__title__h2 {
+  font-weight: lighter;
+}
+
+#carouselExample {
   height: 800px;
 }
-.carousel .imgAdapatadaCarousel img {
+#carouselExample .imgAdapatadaCarousel img {
   max-height: 800px;
   width: 100%;
   height: 800px;
@@ -277,12 +287,15 @@ body {
   .containerIndex__title__h2 {
     font-size: 20px;
   }
-  .carousel {
-    height: 200px;
+  #carouselExample {
+    height: 300px;
   }
-  .carousel .imgAdapatadaCarousel img {
+  #carouselExample .imgAdapatadaCarousel img {
+    max-height: 300px;
+    height: 300px;
     width: 100%;
-    height: 200px;
+    object-fit: cover;
+    object-position: top;
   }
   .container {
     height: 900px;
@@ -392,6 +405,18 @@ body {
     width: 321px;
     height: 250px;
   }
+  .videos__complementos {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .videos__complementos__video {
+    width: 310px;
+    height: 220px;
+  }
   .multimedia__title {
     font-size: 35px;
   }
@@ -443,10 +468,10 @@ body {
     text-align: center;
     font-size: 20px;
   }
-  .carousel {
+  #carouselExample {
     height: 300px;
   }
-  .carousel .imgAdapatadaCarousel img {
+  #carouselExample .imgAdapatadaCarousel img {
     max-height: 300px;
     height: 300px;
     width: 100%;
@@ -561,31 +586,43 @@ body {
     height: 500px;
     gap: 20px;
     text-align: center;
+    /* HISTORIA */
   }
   .video .videos__complementos .videos__complementos__video {
     width: 330px;
     height: 270px;
   }
-  .multimedia__title {
+  .video .videos__complementos .videos__complementos {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .video .videos__complementos .videos__complementos__video {
+    width: 330px;
+    height: 270px;
+  }
+  .video .videos__complementos .multimedia__title {
     font-size: 35px;
   }
-  /* HISTORIA */
-  .history__title {
+  .video .videos__complementos .history__title {
     font-size: 35px;
   }
-  #carouselExample {
+  .video .videos__complementos #carouselExample {
     height: 700px;
   }
-  .card {
+  .video .videos__complementos .card {
     width: 320px;
   }
-  .card .image__wrapper {
+  .video .videos__complementos .card .image__wrapper {
     height: 280px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .card .image__wrapper img {
+  .video .videos__complementos .card .image__wrapper img {
     max-width: 100%;
     height: 280px;
     text-align: center;
@@ -593,10 +630,10 @@ body {
 }
 @media (min-width: 601px) and (max-width: 768px) {
   /* INDEX INDEX INDEX */
-  .carousel {
+  #carouselExample {
     height: 600px;
   }
-  .carousel .imgAdapatadaCarousel img {
+  #carouselExample .imgAdapatadaCarousel img {
     max-height: 600px;
     height: 600px;
     width: 100%;
@@ -684,6 +721,18 @@ body {
     width: 600px;
     height: 400px;
   }
+  .videos__complementos {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .videos__complementos__video {
+    width: 550px;
+    height: 300px;
+  }
   /* HISTORIA */
   .card {
     width: 600px;
@@ -702,10 +751,10 @@ body {
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   /* INDEX INDEX INDEX */
-  .carousel {
+  #carouselExample {
     height: 700px;
   }
-  .carousel .imgAdapatadaCarousel img {
+  #carouselExample .imgAdapatadaCarousel img {
     max-height: 700px;
     height: 700px;
     width: 100%;
@@ -738,33 +787,36 @@ body {
   }
   /* CONTACTO CONTACTO CONTACTO */
   .hero .hero__text {
+    /* INSTALACIONES INSTALACIONES */
+    /* MULTIMEDIA MULTIMEDIA */
+    /* HISTORIA HISTORIA */
+  }
+  .hero .hero__text .hero__text {
     font-size: 150px;
   }
-  .contact__title {
+  .hero .hero__text .contact__title {
     font-size: 40px;
   }
-  .logosContact {
+  .hero .hero__text .logosContact {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
     height: 600px;
     gap: 20px;
   }
-  .ubication__iframe {
+  .hero .hero__text .ubication__iframe {
     height: 400px;
     width: 700px;
   }
-  /* INSTALACIONES INSTALACIONES */
-  .estadio__info,
-  .capillita__info,
-  .catedral__info {
+  .hero .hero__text .estadio__info,
+  .hero .hero__text .capillita__info,
+  .hero .hero__text .catedral__info {
     grid-template-columns: repeat(1, 1fr);
   }
-  /* MULTIMEDIA MULTIMEDIA */
-  .video {
+  .hero .hero__text .video {
     height: 1400px;
   }
-  .video .videos__complementos {
+  .hero .hero__text .video .videos__complementos {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -772,16 +824,27 @@ body {
     gap: 20px;
     text-align: center;
   }
-  .video .videos__complementos .videos__complementos__video {
+  .hero .hero__text .video .videos__complementos .videos__complementos__video {
     width: 700px;
     height: 400px;
   }
-  .video__principal__iframe {
+  .hero .hero__text .video__principal__iframe {
     width: 760px;
     height: 600px;
   }
-  /* HISTORIA HISTORIA */
-  .card {
+  .hero .hero__text .videos__complementos {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .hero .hero__text .videos__complementos__video {
+    width: 700px;
+    height: 400px;
+  }
+  .hero .hero__text .card {
     width: 769px;
   }
 }
@@ -811,11 +874,33 @@ body {
   .container .container__mapa .imgLateral {
     width: 700px;
   }
+  .container__titles__B {
+    font-size: 33px;
+  }
+  .container__titles__A {
+    font-size: 25px;
+  }
+  .container__mapa {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(3, auto);
+    text-align: center;
+  }
+  .container__mapa .container__mapa__iframe {
+    width: 720px;
+    height: 400px;
+    border-radius: 5px;
+  }
+  .container__mapa .imgLateral {
+    width: 700px;
+  }
   /* CONTACTO CONTACTO CONTACTO */
   .hero .hero__text {
     font-size: 200px;
   }
-  /* . */
+  .hero .hero__text .hero__text {
+    font-size: 220px;
+  }
   .logosContact {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

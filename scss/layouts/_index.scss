@@ -15,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include flex(center, center);
 
     .containerIndex__title {
         color: black;
@@ -34,6 +35,18 @@
 }
 
 .carousel {
+    .containerIndex__title__h1 {
+        font-family: Anton;
+        font-weight: bold;
+    }
+
+    .containerIndex__title__h2 {
+        font-weight: lighter;
+    }
+}
+
+#carouselExample {
+
     height: 800px;
 
     .imgAdapatadaCarousel img {
