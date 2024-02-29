@@ -403,57 +403,52 @@
         height: 500px;
         gap: 20px;
         text-align: center;
-
-        .videos__complementos__video {
-            width: 330px;
-            height: 270px;
-        }
-
-        .videos__complementos {
-            display: grid;
-            grid-template-columns: repeat(1, auto);
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .videos__complementos__video {
-            width: 330px;
-            height: 270px;
-        }
-
-        .multimedia__title {
-            font-size: 35px;
-        }
-
-        /* HISTORIA */
-        .history__title {
-            font-size: 35px;
-        }
-
-        #carouselExample {
-            height: 700px;
-        }
-
-        .card {
-            width: 320px;
-
-            .image__wrapper {
-                height: 280px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .image__wrapper img {
-                max-width: 100%;
-                height: 280px;
-                text-align: center;
-            }
-        }
-
     }
+
+    .videos__complementos__video {
+        width: 330px;
+        height: 270px;
+    }
+
+    .videos__complementos {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .multimedia__title {
+        font-size: 35px;
+    }
+
+    /* HISTORIA */
+    .history__title {
+        font-size: 35px;
+    }
+
+    #carouselExample {
+        height: 700px;
+    }
+
+    .card {
+        width: 320px;
+    }
+
+    .image__wrapper {
+        height: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image__wrapper img {
+        max-width: 100%;
+        height: 280px;
+        text-align: center;
+    }
+
 }
 
 @media (min-width:601px) and (max-width:768px) {
@@ -665,79 +660,77 @@
         .hero__text {
             font-size: 150px;
         }
-
-        .contact__title {
-            font-size: 40px;
-        }
-
-        .logosContact {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-            height: 600px;
-            gap: 20px;
-        }
-
-        .ubication__iframe {
-            height: 400px;
-            width: 700px;
-        }
-
-        /* INSTALACIONES INSTALACIONES */
-
-        .estadio__info,
-        .capillita__info,
-        .catedral__info {
-            grid-template-columns: repeat(1, 1fr);
-        }
-
-        /* MULTIMEDIA MULTIMEDIA */
-
-        .video {
-            height: 1400px;
-        }
-
-        .video .videos__complementos {
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            height: 500px;
-            gap: 20px;
-            text-align: center;
-
-            .videos__complementos__video {
-                width: 700px;
-                height: 400px;
-            }
-
-        }
-
-        .video__principal__iframe {
-            width: 760px;
-            height: 600px;
-        }
-
-        .videos__complementos {
-            display: grid;
-            grid-template-columns: repeat(1, auto);
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .videos__complementos__video {
-            width: 700px;
-            height: 400px;
-        }
-
-        /* HISTORIA HISTORIA */
-
-        .card {
-            width: 769px;
-        }
-
     }
+
+    .contact__title {
+        font-size: 40px;
+    }
+
+    .logosContact {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        height: 600px;
+        gap: 20px;
+    }
+
+    .ubication__iframe {
+        height: 400px;
+        width: 700px;
+    }
+
+    /* INSTALACIONES INSTALACIONES */
+
+    .estadio__info,
+    .capillita__info,
+    .catedral__info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* MULTIMEDIA MULTIMEDIA */
+
+    .video {
+        height: 1400px;
+    }
+
+    .video .videos__complementos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        height: 500px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .videos__complementos__video {
+        width: 700px;
+        height: 400px;
+    }
+
+    .video__principal__iframe {
+        width: 760px;
+        height: 600px;
+    }
+
+    /* HISTORIA HISTORIA */
+
+    .card {
+        width: 769px;
+
+        .image__wrapper {
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image__wrapper img {
+            max-width: 100%;
+            height: 450px;
+            text-align: center;
+        }
+    }
+
 }
 
 @media (min-width:1025px) and (max-width:1200px) {
@@ -847,5 +840,24 @@
 
     .videos__complementos__video {
         width: 510px;
+    }
+
+    // historia
+
+    .card {
+        width: 1024px;
+
+        .image__wrapper {
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image__wrapper img {
+            max-width: 100%;
+            height: 450px;
+            text-align: center;
+        }
     }
 }
